@@ -79,7 +79,7 @@ function replaceClass() {
 }
 
 function toggleIconTheme() {
-  // Replace icons not able to be targeted by css variables
+  // Replace icons not able to be targeted by css variabless
   if (page.classList.contains("light")) {
     toggleIcon.classList.replace("far", "fas");
   } else {
