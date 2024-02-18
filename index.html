@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css"
@@ -10,7 +11,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="icon" href="Capture-modified.png" />
+    <link rel="icon" href="./assets/pfp1-modified.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
@@ -25,10 +26,18 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("pRa8thZ1ID18XtXOl");
+    </script>
     <link rel="stylesheet" href="main.css" />
     <title>Nishit Jain</title>
   </head>
-  <body>
+  <body class="light">
     <!-- BACKGROUND VIDEO -->
     <div class="crazycontainer">
       <div class="crazy"></div>
@@ -51,7 +60,7 @@
 
     <nav class="mobile-nav">
       <div class="mob-background"></div>
-      <div class="title">Currently listening to...</div>
+      <div class="title">My Spotify playlist</div>
       <ul>
         <li><a href="/" data-fill-text="HOME">HOME</a></li>
         <li><a href="#experience">EXPERIENCE</a></li>
@@ -70,6 +79,18 @@
       </ul>
     </nav>
 
+    <div
+      class="toggle"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
+      <input type="checkbox" id="theme" class="toggle-input" />
+      <label for="theme" class="toggle-label">
+        <div class="toggle-icon"><i class="fas fa-moon"></i></div>
+      </label>
+    </div>
+
     <!-- SOCIAL LINKS -->
 
     <ul
@@ -86,10 +107,8 @@
         ></a>
       </li>
       <li>
-        <a
-          href="https://instagram.com/itsnishit_jain"
-          style="text-decoration: none"
-          ><i class="fab fa-instagram"></i
+        <a href="mailto:nishitjain1726@gmail.com" style="text-decoration: none"
+          ><i class="fas fa-envelope"></i
         ></a>
       </li>
       <li>
@@ -100,7 +119,6 @@
         ></a>
       </li>
     </ul>
-
     <!-- BORDER LINE -->
 
     <div class="longline"></div>
@@ -149,21 +167,28 @@
         >
       </div>
 
-      <div
+      <!-- <div
         class="circlecontainer"
         data-aos="fade-down"
         data-aos-duration="1200"
         data-aos-once="true"
       >
         <div id="circle">
-          <div id="small-circle0">
-            <div id="small-circle">
-              <div id="small-circle1">
-                <div id="small-circle2">
-                  <img id="kmlimg" src="./assets/nishit3.png" />
-                </div>
-              </div>
-            </div>
+          <div id="small-circle2">
+            <img id="kmlimg" src="./assets/nishit3.png" />
+          </div>
+        </div>
+      </div> -->
+
+      <div
+        class="circlecontainer"
+        data-aos="fade-down"
+        data-aos-duration="1200"
+        data-aos-once="true"
+      >
+        <div class="pulse">
+          <div id="circle">
+            <img id="kmlimg" src="./assets/nishit3.png" />
           </div>
         </div>
       </div>
@@ -178,6 +203,10 @@
         />
       </a>
     </section>
+
+    <div class="maintenance">Under Maintenance</div>
+
+    <div class="maintenance2">try using a bigger device</div>
 
     <!-- SECTION TWO -->
 
@@ -246,17 +275,17 @@
             </li>
             <li class="timeline-item">
               <div class="timeline-info">
-                <span>22 August, 2022</span>
+                <span>26 July, 2022</span>
               </div>
               <div class="timeline-marker"></div>
               <div class="timeline-content">
                 <h3 class="timeline-title">Achievements</h3>
                 <p>
-                  After finishing grade 2 with Merit (83%) and Distinction in
-                  grade 4 (91%) I finally completed grade 7 in Electric Guitar
-                  from Rockschool with Merit (88%). I will be completing grade 8
-                  and Diplloma in the near future. Here is a link to the score
-                  report:
+                  I am proud to have completed grade 2 in electric guitar with a
+                  Merit (83%) and grade 4 with a Distinction (91%) from
+                  Rockschool. Most recently, I completed grade 7 with a Merit
+                  (88%) and am looking forward to completing grade 8 and earning
+                  my Diploma in the near future.
                 </p>
               </div>
             </li>
@@ -309,11 +338,11 @@
               <div class="timeline-content">
                 <h3 class="timeline-title">Code Warriors</h3>
                 <p>
-                  I have been a part of this club for almost 1.5 years. During
-                  this time I learnt and polished my skills in the domain of
-                  Competitive Programming and Cryptic Hunting. As a core member
-                  and Cryptic head i have organised multiple events (both inter
-                  and intra) with my clubmates.
+                  I have been a member of this club for almost 1.5 years, during
+                  which, I have developed my skills in competitive programming
+                  and cryptic hunting. As a core member and the head of the
+                  cryptic team, I have organized several events, both within and
+                  outside the club.
                 </p>
               </div>
             </li>
@@ -325,9 +354,85 @@
               <div class="timeline-content">
                 <h3 class="timeline-title">Re-Dcrypt</h3>
                 <p>
-                  Organised and designed levels for Re-Dcrypt 2 - a two day
-                  national Cryptic Hunt held on 8th October, 2022 with 200+
-                  participants and multiple sponsors and prizes.
+                  I had the opportunity to organize and design levels for
+                  Re-Dcrypt 2, a national cryptic hunt held on October 8, 2022.
+                  The event featured over 200 participants and multiple sponsors
+                  and prizes.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="section-three">
+      <div class="section-text">
+        <div
+          class="sub-title2"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Internships
+        </div>
+      </div>
+      <img
+        src="./assets/donut.jpg"
+        class="donut-img"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      />
+      <img
+        src="./assets/hitech.jpg"
+        class="hitech-img"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      />
+    </section>
+
+    <div class="container-fluid1">
+      <div class="row example-basic">
+        <div
+          class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          <ul class="timeline">
+            <li class="timeline-item">
+              <div class="timeline-info">
+                <span>June, 2022 - July, 2022</span>
+              </div>
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3 class="timeline-title">Donut</h3>
+                <p>
+                  Developed a responsive frontend for a non-profit organization
+                  using HTML, CSS, and Three.js. The frontend features
+                  background animations created using Three.js, which add an
+                  engaging and interactive element to the user experience. In
+                  addition, I refactored the organization's existing code to
+                  improve its efficiency and maintainability.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-info">
+                <span>22 August, 2022</span>
+              </div>
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3 class="timeline-title">Hi-Tech</h3>
+                <p>
+                  Created a platform that allows superusers to easily access,
+                  add, and manipulate various forms. The platform has a robust
+                  backend that was built using Django and SQL, and a responsive
+                  frontend that was built using HTML5, CSS3, and bootstrap. This
+                  allows superusers to quickly and easily manage and manipulate
+                  their forms.
                 </p>
               </div>
             </li>
@@ -354,11 +459,11 @@
           data-aos-duration="1000"
           data-aos-once="true"
         >
-          I am a software developer and musician from India, currently studying
-          PCM + Computer Science from Delhi Public School, Vasant Kunj. I've
-          been playing electric guitar for over 5 years, specialising in a
-          variety of genres. Other than that, I'm passionate about programming
-          and tech in general.
+          Here are some of the notable projects that I have built. To see more
+          of my work, please visit my GitHub profile where I regularly post
+          updates and new projects. There, you can see the code and features of
+          my projects in detail and get a better understanding of my skills and
+          abilities as a developer.
         </p>
         <div
           class="project-container"
@@ -548,35 +653,43 @@
           data-aos-duration="1200"
           data-aos-once="true"
         >
-          I am a software developer and musician from India, currently studying
-          PCM + Computer Science from Delhi Public School, Vasant Kunj. I've
-          been playing electric guitar for over 5 years, specialising in a
-          variety of genres. Other than that, I'm passionate about programming
-          and tech in general.
+          I am always looking to connect with potential clients and
+          collaborators, so please don't hesitate to reach out if you have any
+          questions or opportunities to discuss. To get in touch with me, you
+          can use the form on this page to send me an email. I will do my best
+          to respond as quickly as possible. Thank you for visiting my portfolio
+          website, and I look forward to connecting with you soon!
         </p>
         <form
+          id="form"
           data-aos="fade-right"
           data-aos-duration="1000"
           data-aos-once="true"
         >
           <input
-            name="name"
+            id="from_name"
+            name="from_name"
             type="text"
             class="feedback-input"
             placeholder="Name"
+            required
           />
           <input
-            name="email"
-            type="text"
+            id="email_id"
+            name="email_id"
+            type="email"
             class="feedback-input"
             placeholder="Email"
+            required
           />
           <textarea
-            name="text"
+            id="message"
+            name="message"
             class="feedback-input"
             placeholder="Comment"
+            required
           ></textarea>
-          <input type="submit" value="Submit" class="submit" />
+          <input type="submit" id="button" value="Submit" class="submit" />
         </form>
       </div>
     </section>
@@ -590,29 +703,6 @@
     <script src="main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-      $(document).on("click", ".project-filter li", function () {
-        $(this)
-          .addClass("project-filter-active")
-          .siblings()
-          .removeClass("project-filter-active");
-      });
-
-      $(document).ready(function () {
-        $(".list").click(function () {
-          const value = $(this).attr("data-filter");
-          if (value == "all") {
-            $(".project-box").show("0");
-          } else {
-            $(".project-box")
-              .not("." + value)
-              .hide("0");
-            $(".project-box")
-              .filter("." + value)
-              .show("0");
-          }
-        });
-      });
-
       var lFollowX = 0,
         lFollowY = 0,
         x = 0,
@@ -643,7 +733,7 @@
       $(window).on("mousemove click", function (e) {
         var lMouseX = Math.max(
           -200,
-          Math.min(200, $(window).width() / 2 - e.clientX)
+          Math.min(100, $(window).width() / 2 - e.clientX)
         );
         var lMouseY = Math.max(
           -200,
